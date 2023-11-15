@@ -1,3 +1,43 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  background: var(--color-surface-surface-background);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  align-items: center;
+}
+
+.username {
+  color: var(--color-text-text-primary);
+  font-family: Kalam;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.navegacao #styleLinkHome {
+  color: var(--color-text-text-secondary);
+  font-family: Heebo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.navegacao a {
+  color: var(--color-text-text-secondary);
+  font-family: Heebo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
 .secaoSobreMim {
   display: flex;
   flex-direction: row;
@@ -59,4 +99,23 @@
   padding-right: .4rem;
   border-radius: 0.2rem;
   padding-bottom: 2rem;
+}
+
+.secaoProjetos {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 4.5rem 7rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.imagemProjeto {
+  height: 10rem;
+  align-self: stretch;
 }

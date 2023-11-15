@@ -1,12 +1,14 @@
+import { CSSProperties } from "react";
 import module from "./Subtitulo.module.css";
 
 interface PropsSubtitulo {
   subtitulo: string;
+  style?: CSSProperties;
 }
 
-function Subtitulo({ subtitulo }: PropsSubtitulo) {
+function Subtitulo({ subtitulo, style }: PropsSubtitulo) {
   return (
-    <div className={module.tituloVerde}>
+    <div className={module.tituloVerde} style={style}>
       <p>{subtitulo}</p>
     </div>
   );

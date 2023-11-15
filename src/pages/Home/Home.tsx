@@ -1,13 +1,37 @@
 import Conteudo from "../../components/Conteudo/Conteudo";
-import Header from "../../components/Header/Header";
 import Botao from "../../components/Botao/Botao";
 import module from "./Home.module.css";
 import Subtitulo from "../../components/Subtitulo/Subtitulo";
+import Card from "../../components/Card/Card";
 
 function Home() {
   return (
     <>
-      <Header />
+      <header aria-label="Início do site" id="home">
+        <nav className={module.nav}>
+          <li>
+            <a href="#" className={module.username}>
+              IslanP1
+            </a>
+          </li>
+          <div className={module.navegacao}>
+            <li>
+              <a href="#" id="styleLinkHome">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Projects</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </div>
+        </nav>
+      </header>
       <section className={module.secaoSobreMim}>
         <div className={module.sobre}>
           <h1 id={module.tituloPrincipal}>Hi, I'm Islan</h1>
@@ -90,7 +114,7 @@ function Home() {
             me, feel free to send me a message."
           />
 
-          <Botao 
+          <Botao
             cor={{
               background: "var(--color-surface-button-primary-default)",
             }}
@@ -98,6 +122,70 @@ function Home() {
             imagem={<img src="  /ReadCvLogo.svg" alt="ReadCvLogo" />}
           />
         </div>
+      </section>
+
+      <section className={module.secaoProjetos}>
+        <Subtitulo subtitulo="Projects" style={{ textAlign: "center" }} />
+        <Conteudo
+          titulo="Take a look at my highlighted projects"
+          style={{ textAlign: "center" }}
+        />
+
+        <div className={module.cards}>
+          <Card
+            imagemPrincipal={
+              <img
+                src="/landingpage-pyquiz.png"
+                alt="landingpage-pyquiz"
+                className={module.imagemProjeto}
+              />
+            }
+            data="Jul-Dec 2022"
+            imagemStack={<img src="/js.svg" alt="js" />}
+            titulo="Projeto X"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
+          laboriosam veniam labore beatae mollitia, harum, nobis nihil esse"
+          />
+
+          <Card
+            imagemPrincipal={
+              <img
+                src="/landingpage-pyquiz.png"
+                alt="landingpage-pyquiz"
+                className={module.imagemProjeto}
+              />
+            }
+            data="Jul-Dec 2022"
+            imagemStack={<img src="/js.svg" alt="js" />}
+            titulo="Projeto X"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
+          laboriosam veniam labore beatae mollitia, harum, nobis nihil esse"
+          />
+
+          <Card
+            imagemPrincipal={
+              <img
+                src="/landingpage-pyquiz.png"
+                alt="landingpage-pyquiz"
+                className={module.imagemProjeto}
+              />
+            }
+            data="Jul-Dec 2022"
+            imagemStack={<img src="/js.svg" alt="js" />}
+            titulo="Projeto X"
+            texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
+          laboriosam veniam labore beatae mollitia, harum, nobis nihil esse"
+          />
+        </div>
+        <Botao
+          cor={{
+            background: "var(--color-surface-surface-secondary) ",
+            margin: "0 auto",
+            marginTop: "2rem",
+          }}
+          texto="See all"
+          imagem={<img src="/ArrowRight .svg" alt="ReadCvLogo" />}
+        />
       </section>
     </>
   );
