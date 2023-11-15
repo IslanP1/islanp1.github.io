@@ -36,3 +36,27 @@
   height: 100%;
   border-radius: 0.5rem;
 }
+
+.cardMaisSobreMim {
+  display: flex;
+  padding: 4.5rem;
+  max-width: 95%;
+  margin: 0 auto;
+  align-items: center;
+  gap: 5rem;
+  flex: 1 0 0;
+  border-radius: 1rem;
+  background: var(--color-surface-surface-primary);
+  margin-bottom: 2rem;
+}
+
+#fotoPessoal img {
+  width: 20rem;
+  border-radius: 0.5rem;
+}
+
+.stacksIcons img {
+  padding-right: .4rem;
+  border-radius: 0.2rem;
+  padding-bottom: 2rem;
+}

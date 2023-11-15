@@ -1,0 +1,9 @@
+.tituloVerde {
+  color: var(--color-stroke-stroke-highlight);
+  font-family: Kalam;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1rem;
+  padding-bottom: 0.5rem;
+}
