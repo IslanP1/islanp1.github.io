@@ -1,0 +1,18 @@
+.botao {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 1.5rem;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  color: var(--color-text-text-primary);
+  text-align: center;
+  font-family: Heebo;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+  cursor: pointer;
+}
