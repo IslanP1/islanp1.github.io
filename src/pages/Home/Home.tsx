@@ -234,7 +234,7 @@ function Home() {
               background: "var(--color-surface-button-primary-default)",
             }}
             texto="Send me a message"
-            imagem={<img src="/public/ArrowRight .svg" alt="ArrowRight" />}
+            imagem={<img src="/ArrowRight .svg" alt="ArrowRight" />}
           />
         </div>
       </section>
