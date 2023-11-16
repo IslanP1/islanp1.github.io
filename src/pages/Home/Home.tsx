@@ -206,10 +206,30 @@ function Home() {
           </div>
         </div>
         <div className={module.form}>
-          <input className={module.camposMenores} type="text" name="name" id="name" placeholder="Name" required/>
-          <input className={module.camposMenores} type="email" name="email" id="email" placeholder="E-mail" required/>
-          <textarea className={module.campoMaior} name="message" id="message" placeholder="Your Message" required/> 
-          <Botao 
+          <input
+            className={module.camposMenores}
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Name"
+            required
+          />
+          <input
+            className={module.camposMenores}
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <textarea
+            className={module.campoMaior}
+            name="message"
+            id="message"
+            placeholder="Your Message"
+            required
+          />
+          <Botao
             cor={{
               background: "var(--color-surface-button-primary-default)",
             }}
@@ -218,6 +238,18 @@ function Home() {
           />
         </div>
       </section>
+
+      <footer className={module.rodape}>
+        <p className={module.textoRodape}>Islan Pereira 2023. Layout based on Rocketseat’s template.</p>
+        <div className={module.textoRedesSociais}>
+          <p className={module.textoRodape}>GitHub</p>
+          <p className={module.textoRodape}>Linkedin</p>
+          <p className={module.textoRodape}>Intagram</p>
+          <a href="">
+            <img src="/ArrowUp.svg" alt="ArrowUp" />
+          </a>
+        </div>
+      </footer>
     </>
   );
 }
