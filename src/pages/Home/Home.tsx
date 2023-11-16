@@ -3,6 +3,7 @@ import Botao from "../../components/Botao/Botao";
 import module from "./Home.module.css";
 import Subtitulo from "../../components/Subtitulo/Subtitulo";
 import Card from "../../components/Card/Card";
+import RedesSociais from "../../components/RedesSociais/RedesSocias";
 
 function Home() {
   return (
@@ -186,6 +187,36 @@ function Home() {
           texto="See all"
           imagem={<img src="/ArrowRight .svg" alt="ReadCvLogo" />}
         />
+      </section>
+
+      <section className={module.cardMaisSobreMim}>
+        <div className={module.contate}>
+          <div className={module.fotoPessoal}>
+            <img src="/islan.jpeg" alt="Islan Pereira" />
+          </div>
+          <Subtitulo subtitulo="Contact" />
+          <Conteudo
+            titulo="Enjoyed my work? Let’s work together"
+            texto="I’m always up for a chat. Pop me an email at hi@linalevi.com or give me a shout on social media. "
+          />
+          <div className={module.iconesRedesSociais}>
+            <RedesSociais caminho="/logo-github 1.svg" />
+            <RedesSociais caminho="/logo-linkedin 1.svg" />
+            <RedesSociais caminho="/logo-instagram 1.svg" />
+          </div>
+        </div>
+        <div className={module.form}>
+          <input className={module.camposMenores} type="text" name="name" id="name" placeholder="Name" required/>
+          <input className={module.camposMenores} type="email" name="email" id="email" placeholder="E-mail" required/>
+          <textarea className={module.campoMaior} name="message" id="message" placeholder="Your Message" required/> 
+          <Botao 
+            cor={{
+              background: "var(--color-surface-button-primary-default)",
+            }}
+            texto="Send me a message"
+            imagem={<img src="/public/ArrowRight .svg" alt="ArrowRight" />}
+          />
+        </div>
       </section>
     </>
   );
