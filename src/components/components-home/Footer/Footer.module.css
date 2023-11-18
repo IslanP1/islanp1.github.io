@@ -1,0 +1,23 @@
+.rodape {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 7rem;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.textoRodape {
+  color: var(--color-text-text-secondary);
+  font-family: Heebo;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
+
+.textoRedesSociais {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}

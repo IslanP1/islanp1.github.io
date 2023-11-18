@@ -1,0 +1,18 @@
+.secaoProjetos {
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 4.5rem 7rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.imagemProjeto {
+  height: 10rem;
+  align-self: stretch;
+}

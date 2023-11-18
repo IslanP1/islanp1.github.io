@@ -1,0 +1,38 @@
+.secaoSobreMim {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 8.5rem;
+  justify-content: space-around;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: column;
+  width: 37rem;
+}
+
+#tituloPrincipal {
+  font-family: Kalam;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3.5rem;
+  background: var(--brand-gradient-horizontal);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-bottom: 2rem;
+}
+
+.botoesSecaoSobreMim {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.stack img {
+  width: 32rem;
+  height: 100%;
+  border-radius: 0.5rem;
+}
