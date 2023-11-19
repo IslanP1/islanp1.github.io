@@ -22,41 +22,41 @@ function SecaoProjetos() {
               className={module.imagemProjeto}
             />
           }
-          data="Jul-Dec 2022"
+          data="Dec-Jan 2022-2023"
           imagemStack={<img src="/js.svg" alt="js" />}
-          titulo="Projeto X"
-          texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
-          laboriosam veniam labore beatae mollitia, harum, nobis nihil esse"
+          titulo="Pyquiz RN"
+          texto="The application's main objective is to promote the study and learning of programming, specifically Python, in a theoretical, practical and intuitive way for beginners in this fascinating universe of technology."
+          link="https://github.com/IslanP1/Pyquiz-RN"
         />
 
         <Card
           imagemPrincipal={
             <img
-              src="/landingpage-pyquiz.png"
-              alt="landingpage-pyquiz"
+              src="/hogwarts.png"
+              alt="hogwarts universe"
               className={module.imagemProjeto}
             />
           }
-          data="Jul-Dec 2022"
+          data="Jun-Jul 2023"
           imagemStack={<img src="/js.svg" alt="js" />}
-          titulo="Projeto X"
-          texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
-          laboriosam veniam labore beatae mollitia, harum, nobis nihil esse"
+          titulo="Hogwarts Universe"
+          texto="Hogwarts Universe is a website to show all the films, series or games from the Hogwarts universe to the website user in chronological order, as well as a brief description and suggestion of where to watch or play."
+          link="https://github.com/IslanP1/Hogwarts-Universe"
         />
 
         <Card
           imagemPrincipal={
             <img
-              src="/landingpage-pyquiz.png"
-              alt="landingpage-pyquiz"
+              src="/game-list.png"
+              alt="Game List"
               className={module.imagemProjeto}
             />
           }
-          data="Jul-Dec 2022"
+          data="Sep 2023"
           imagemStack={<img src="/js.svg" alt="js" />}
-          titulo="Projeto X"
-          texto="Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut cum
-          laboriosam veniam labore beatae mollitia, harum, nobis nihil esse"
+          titulo="LOOPIS Game List"
+          texto="The LOOPIS-Game-List is a project developed as part of the admission process at the company LOOPIS JR. It demonstrates technical skills in software development and our love of games. This game list allows you to add, remove and manage favorite games easily."
+          link="https://github.com/IslanP1/LOOPIS-Game-List/"
         />
       </div>
       <Botao
@@ -67,6 +67,7 @@ function SecaoProjetos() {
         }}
         texto="See all"
         imagem={<img src="/ArrowRight .svg" alt="ReadCvLogo" />}
+        link="https://github.com/IslanP1?tab=repositories"
       />
     </section>
   );

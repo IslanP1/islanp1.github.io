@@ -57,6 +57,7 @@ function SecaoCardMaisSobreMim() {
         <Botao
           cor={{
             background: "var(--color-surface-button-primary-default)",
+            width: "12.7%"
           }}
           texto="My resume"
           imagem={<img src="  /ReadCvLogo.svg" alt="ReadCvLogo" />}

@@ -6,6 +6,7 @@ interface PropsCard {
   imagemStack: JSX.Element;
   titulo: string;
   texto: string;
+  link: string;
 }
 
 function Card({
@@ -14,9 +15,10 @@ function Card({
   imagemStack,
   titulo,
   texto,
+  link
 }: PropsCard) {
   return (
-    <div className={module.card}>
+    <a className={module.card} href={link} target="_blank">
       {imagemPrincipal}
       <div className={module.dataEStack}>
         <p className={module.data}>{data}</p>
@@ -24,7 +26,7 @@ function Card({
       </div>
       <h3 className={module.subtituloCard}>{titulo}</h3>
       <p className={module.texto}>{texto}</p>
-    </div>
+    </a>
   );
 }
 

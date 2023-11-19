@@ -4,14 +4,15 @@ interface PropsBotao {
   texto: string;
   imagem: JSX.Element;
   cor: React.CSSProperties;
+  link?: string;
 }
 
-function Botao({ texto, imagem, cor }: PropsBotao) {
+function Botao({ texto, imagem, cor, link }: PropsBotao) {
   return (
-    <button style={cor} className={module.botao}>
+    <a style={cor} className={module.botao} href={link} target="_blank">
       {texto}
       {imagem}
-    </button>
+    </a>
   );
 }
 
