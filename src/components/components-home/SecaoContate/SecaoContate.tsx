@@ -17,9 +17,9 @@ function SecaoContate() {
           texto="I’m always up for a chat. Pop me an email at hi@linalevi.com or give me a shout on social media. "
         />
         <div className={module.iconesRedesSociais}>
-          <RedesSociais caminho="/logo-github 1.svg" />
-          <RedesSociais caminho="/logo-linkedin 1.svg" />
-          <RedesSociais caminho="/logo-instagram 1.svg" />
+          <RedesSociais caminho="/logo-github 1.svg" link="http://github.com/IslanP1"/>
+          <RedesSociais caminho="/logo-linkedin 1.svg" link="https://www.linkedin.com/in/islan-pereira/"/>
+          <RedesSociais caminho="/logo-instagram 1.svg" link="https://www.instagram.com/islanx_oliv/"/>
         </div>
       </div>
       <div className={module.form}>

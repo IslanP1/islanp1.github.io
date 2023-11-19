@@ -7,10 +7,10 @@ function Footer() {
         Islan Pereira 2023. Layout based on Rocketseat’s template.
       </p>
       <div className={module.textoRedesSociais}>
-        <p className={module.textoRodape}>GitHub</p>
-        <p className={module.textoRodape}>Linkedin</p>
-        <p className={module.textoRodape}>Intagram</p>
-        <a href="">
+        <a className={module.textoRodape} href="http://github.com/IslanP1" target="_blank">GitHub</a>
+        <a className={module.textoRodape} href="https://www.linkedin.com/in/islan-pereira/" target="_blank">Linkedin</a>
+        <a className={module.textoRodape} href="https://www.instagram.com/islanx_oliv/" target="_blank">Intagram</a>
+        <a href="#home">
           <img src="/ArrowUp.svg" alt="ArrowUp" />
         </a>
       </div>
