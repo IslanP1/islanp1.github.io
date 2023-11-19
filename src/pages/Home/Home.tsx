@@ -5,6 +5,7 @@ import SecaoProjetos from "../../components/components-home/SecaoProjetos/SecaoP
 import SecaoContate from "../../components/components-home/SecaoContate/SecaoContate";
 import Footer from "../../components/components-home/Footer/Footer";
 
+
 function Home() {
   return (
     <>

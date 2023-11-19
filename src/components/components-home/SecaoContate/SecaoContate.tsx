@@ -6,7 +6,7 @@ import Botao from "../../props/Botao/Botao";
 
 function SecaoContate() {
   return (
-    <section className={module.card}>
+    <section className={module.card} id="contact">
       <div className={module.contate}>
         <div className={module.fotoPessoal}>
           <img src="/islan.jpeg" alt="Islan Pereira" />

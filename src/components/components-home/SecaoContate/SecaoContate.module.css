@@ -3,6 +3,7 @@
   padding: 4.5rem;
   max-width: 95%;
   margin: 0 auto;
+  justify-content: space-around;
   align-items: center;
   gap: 5rem;
   flex: 1 0 0;

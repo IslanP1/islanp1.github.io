@@ -6,7 +6,7 @@ import Botao from "../../props/Botao/Botao";
 
 function SecaoProjetos() {
   return (
-    <section className={module.secaoProjetos}>
+    <section className={module.secaoProjetos} id="projects">
       <Subtitulo subtitulo="Projects" style={{ textAlign: "center" }} />
       <Conteudo
         titulo="Take a look at my highlighted projects"

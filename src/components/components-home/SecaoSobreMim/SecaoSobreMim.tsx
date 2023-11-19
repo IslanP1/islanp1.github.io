@@ -4,7 +4,7 @@ import Botao from "../../props/Botao/Botao";
 
 function SecaoSobreMim() {
   return (
-    <section className={module.secaoSobreMim}>
+    <section className={module.secaoSobreMim} id="about">
       <div className={module.sobre}>
         <h1 id={module.tituloPrincipal}>Hi, I'm Islan</h1>
         <Conteudo

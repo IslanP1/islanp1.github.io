@@ -7,6 +7,10 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.25);
 }
 
+.navegacao i {
+  visibility: hidden;
+}
+
 .navegacao {
   display: flex;
   justify-content: space-around;
@@ -36,4 +40,33 @@
   font-size: 1rem;
   font-style: normal;
   font-weight: 400;
+}
+
+@media (max-width: 425px) {
+  .navegacao li {
+    display: none;
+  }
+
+  .navegacao i {
+    visibility: visible;
+    color: var(--color-text-text-primary);
+    font-size: 2rem;
+    cursor: pointer;
+  }
+
+  .drawer div {
+    background: var(--color-surface-surface-background);;
+  }
+
+  .closeIcon {
+    color: #ff0000;
+  }
+
+  .drawerTitle {
+    color: #ff0000; 
+  }
+
+  .drawerTitle::after {
+    background-color: #ff0000;
+  }
 }

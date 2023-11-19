@@ -5,7 +5,7 @@ import Botao from "../../props/Botao/Botao";
 
 function SecaoCardMaisSobreMim() {
   return (
-    <section className={module.cardMaisSobreMim}>
+    <section className={module.cardMaisSobreMim} id="about-me">
       <div id={module.fotoPessoal}>
         <img src="/islan.jpeg" alt="Islan Pereira" />
       </div>
