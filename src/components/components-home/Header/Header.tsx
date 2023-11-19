@@ -46,9 +46,7 @@ function Header() {
           onClose={onClose}
           open={open}
           className={module.drawer}
-          closeIcon={<i className={`fa-solid fa-times ${module.closeIcon}`} />}
-          style={{ color: "2px solid #ff0000" }}
-
+          closeIcon={<i className={`fa-solid fa-times ${module.closeIcon}`} />} 
         >
           <li>
             <a href="#home" id="styleLinkHome">

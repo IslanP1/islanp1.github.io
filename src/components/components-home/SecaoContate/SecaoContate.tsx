@@ -14,7 +14,7 @@ function SecaoContate() {
         <Subtitulo subtitulo="Contact" />
         <Conteudo
           titulo="Enjoyed my work? Let’s work together"
-          texto="I’m always up for a chat. Pop me an email at hi@linalevi.com or give me a shout on social media. "
+          texto="I’m always up for a chat. Pop me an email at islanpereiradeoliveira@gmail.com or give me a shout on social media. "
         />
         <div className={module.iconesRedesSociais}>
           <RedesSociais caminho="/logo-github 1.svg" link="http://github.com/IslanP1"/>

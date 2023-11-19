@@ -43,6 +43,11 @@
 }
 
 @media (max-width: 425px) {
+  .nav {
+    padding: 1rem;
+    justify-content: space-between;
+  }
+
   .navegacao li {
     display: none;
   }
@@ -55,18 +60,22 @@
   }
 
   .drawer div {
-    background: var(--color-surface-surface-background);;
+    background: var(--color-surface-surface-background);
+    border-bottom: none;
+    list-style: none;
+  }
+
+  .drawerTitle, .drawer a {
+    color: var(--color-text-text-secondary);
+    font-family: Heebo;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    cursor: pointer;
   }
 
   .closeIcon {
+    font-size: 1.2rem;
     color: #ff0000;
-  }
-
-  .drawerTitle {
-    color: #ff0000; 
-  }
-
-  .drawerTitle::after {
-    background-color: #ff0000;
   }
 }
