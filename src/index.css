@@ -1,25 +1,21 @@
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anton&family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Kalam:wght@300;400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-:root {
-  --color-text-text-primary: #f5f6f6;
-  --color-surface-surface-background: #171023;
-  --color-surface-surface-primary: #2c243b;
-  --color-surface-button-primary-default: #8a42db;
-  --color-surface-surface-secondary: #413a4f;
-  --color-text-text-secondary: #cdd0d4;
-  --brand-gradient-horizontal: linear-gradient(90deg, #9955e8 0%, #7bffaf 100%);
-  --color-stroke-stroke-highlight: #7dffaf;
-}
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  list-style: none;
-  text-decoration: none;
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--color-surface-surface-background);
+  @apply m-0 min-h-screen bg-ink font-body text-text antialiased;
+  background-image:
+    radial-gradient(circle at 10% 10%, rgba(255, 138, 61, 0.18), transparent 30%),
+    radial-gradient(circle at 90% 20%, rgba(41, 211, 167, 0.16), transparent 35%),
+    linear-gradient(150deg, #0b1215 0%, #122028 100%);
+}
+
+a {
+  @apply no-underline;
 }

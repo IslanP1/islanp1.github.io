@@ -1,4 +1,3 @@
-import module from "./SecaoContate.module.css";
 import Subtitulo from "../../props/Subtitulo/Subtitulo";
 import Conteudo from "../../props/Conteudo/Conteudo";
 import RedesSociais from "../../props/RedesSociais/RedesSocias";
@@ -6,33 +5,38 @@ import Botao from "../../props/Botao/Botao";
 
 function SecaoContate() {
   return (
-    <section className={module.card} id="contact">
-      <div className={module.contate}>
-        <div className={module.fotoPessoal}>
-          <img src="/islan.jpeg" alt="Islan Pereira" />
+    <section
+      className="mx-auto mb-10 grid max-w-6xl gap-10 rounded-2xl border border-white/10 bg-surface/90 p-6 md:grid-cols-2 md:p-10"
+      id="contact"
+    >
+      <div>
+        <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full border border-white/10 bg-gradient-to-r from-accent/40 to-mint/40 font-title text-2xl font-bold text-text">
+          IP
         </div>
-        <Subtitulo subtitulo="Contact" />
+        <Subtitulo subtitulo="Contato" />
         <Conteudo
-          titulo="Enjoyed my work? Let’s work together"
-          texto="I’m always up for a chat. Pop me an email at islanpereiradeoliveira@gmail.com or give me a shout on social media. "
+          titulo="Gostou do meu trabalho? Vamos conversar"
+          texto="Estou sempre aberto a novas ideias e oportunidades. Você pode me chamar por e-mail em islanpereiradeoliveira@gmail.com ou pelas redes sociais."
         />
-        <div className={module.iconesRedesSociais}>
-          <RedesSociais caminho="/logo-github 1.svg" link="http://github.com/IslanP1"/>
-          <RedesSociais caminho="/logo-linkedin 1.svg" link="https://www.linkedin.com/in/islan-pereira/"/>
-          <RedesSociais caminho="/logo-instagram 1.svg" link="https://www.instagram.com/islanx_oliv/"/>
+
+        <div className="mt-6 flex gap-3">
+          <RedesSociais caminho="/logo-github 1.svg" link="https://github.com/IslanP1" label="GitHub" />
+          <RedesSociais caminho="/logo-linkedin 1.svg" link="https://www.linkedin.com/in/islan-pereira/" label="LinkedIn" />
+          <RedesSociais caminho="/logo-instagram 1.svg" link="https://www.instagram.com/islanx_oliv/" label="Instagram" />
         </div>
       </div>
-      <div className={module.form}>
+
+      <form className="flex flex-col gap-4 rounded-2xl border border-white/10 bg-ink/40 p-4">
         <input
-          className={module.camposMenores}
+          className="rounded-xl border border-white/10 bg-surface-soft px-4 py-3 text-sm text-text outline-none transition placeholder:text-muted focus:border-mint"
           type="text"
           name="name"
           id="name"
-          placeholder="Name"
+          placeholder="Nome"
           required
         />
         <input
-          className={module.camposMenores}
+          className="rounded-xl border border-white/10 bg-surface-soft px-4 py-3 text-sm text-text outline-none transition placeholder:text-muted focus:border-mint"
           type="email"
           name="email"
           id="email"
@@ -40,20 +44,19 @@ function SecaoContate() {
           required
         />
         <textarea
-          className={module.campoMaior}
+          className="min-h-40 resize-none rounded-xl border border-white/10 bg-surface-soft px-4 py-3 text-sm text-text outline-none transition placeholder:text-muted focus:border-mint"
           name="message"
           id="message"
-          placeholder="Your Message"
+          placeholder="Sua mensagem"
           required
         />
         <Botao
-          cor={{
-            background: "var(--color-surface-button-primary-default)",
-          }}
-          texto="Send me a message"
-          imagem={<img src="/ArrowRight .svg" alt="ArrowRight" />}
+          className="justify-center bg-accent text-base"
+          texto="Enviar mensagem"
+          imagem={<img src="/ArrowRight .svg" alt="ArrowRight" className="h-5 w-5" />}
+          type="submit"
         />
-      </div>
+      </form>
     </section>
   );
 }

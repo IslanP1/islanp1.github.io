@@ -10,10 +10,12 @@ function Home() {
   return (
     <>
       <Header />
-      <SecaoSobreMim />
-      <SecaoCardMaisSobreMim />
-      <SecaoProjetos />
-      <SecaoContate />
+      <main className="pt-20">
+        <SecaoSobreMim />
+        <SecaoCardMaisSobreMim />
+        <SecaoProjetos />
+        <SecaoContate />
+      </main>
       <Footer />
     </>
   );

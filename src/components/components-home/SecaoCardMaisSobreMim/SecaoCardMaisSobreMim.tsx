@@ -1,16 +1,21 @@
-import module from "./SecaoCardMaisSobreMim.module.css";
 import Conteudo from "../../props/Conteudo/Conteudo";
 import Subtitulo from "../../props/Subtitulo/Subtitulo";
 import Botao from "../../props/Botao/Botao";
 
 function SecaoCardMaisSobreMim() {
   return (
-    <section className={module.cardMaisSobreMim} id="about-me">
-      <div id={module.fotoPessoal}>
-        <img src="/islan.jpeg" alt="Islan Pereira" />
+    <section
+      className="mx-auto mb-10 grid max-w-6xl gap-10 rounded-2xl border border-white/10 bg-surface/90 p-6 md:grid-cols-[220px_1fr] md:p-10"
+      id="about-me"
+    >
+      <div className="flex items-center justify-center">
+        <div className="flex h-52 w-52 items-center justify-center rounded-2xl border border-white/10 bg-gradient-to-br from-accent/25 to-mint/25 font-title text-6xl font-extrabold text-text">
+          IP
+        </div>
       </div>
+
       <div>
-        <div className={module.stacksIcons}>
+        <div className="mb-6 flex flex-wrap gap-2">
           <img
             src="https://img.shields.io/badge/Python-000?style=for-the-badge&logo=python"
             alt="Icon Python"
@@ -44,23 +49,17 @@ function SecaoCardMaisSobreMim() {
             alt="Icon github"
           />
         </div>
-        <Subtitulo subtitulo="About me" />
+        <Subtitulo subtitulo="Sobre mim" />
         <Conteudo
-          titulo="I'm a passionate software developer looking for my first oppotunity"
-          texto="I am currently studying the 2nd period of Systems Analysis and
-            Development at IFPB - Campus Cajazeiras. I am a technology
-            enthusiast and am always looking for new knowledge and challenges. I
-            am open to new opportunities and challenges, if you want to contact
-            me, feel free to send me a message."
+          titulo="Desenvolvedor de software em busca de novos desafios"
+          texto="Atualmente curso Análise e Desenvolvimento de Sistemas no IFPB - Campus Cajazeiras. Sou apaixonado por tecnologia, aprendizado contínuo e projetos que geram impacto real."
         />
 
         <Botao
-          cor={{
-            background: "var(--color-surface-button-primary-default)",
-            width: "12.7%"
-          }}
-          texto="My resume"
-          imagem={<img src="  /ReadCvLogo.svg" alt="ReadCvLogo" />}
+          className="mt-6 bg-accent text-base"
+          texto="Meu currículo"
+          imagem={<img src="/ReadCvLogo.svg" alt="ReadCvLogo" className="h-5 w-5" />}
+          link="https://github.com/IslanP1"
         />
       </div>
     </section>
