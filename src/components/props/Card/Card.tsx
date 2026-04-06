@@ -7,6 +7,7 @@ interface PropsCard {
   titulo: string;
   texto: string;
   link: string;
+  ctaText?: string;
 }
 
 function Card({
@@ -15,7 +16,8 @@ function Card({
   imagemStack,
   titulo,
   texto,
-  link
+  link,
+  ctaText = "Ver projeto no GitHub"
 }: PropsCard) {
   return (
     <a
@@ -36,7 +38,7 @@ function Card({
       </h3>
       <p className="text-sm leading-7 text-muted">{texto}</p>
       <p className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-accent transition group-hover:text-mint">
-        Ver projeto no GitHub
+        {ctaText}
         <span aria-hidden="true">→</span>
       </p>
     </a>
