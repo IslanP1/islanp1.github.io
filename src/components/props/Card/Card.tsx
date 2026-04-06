@@ -1,12 +1,13 @@
-import module from "./Card.module.css";
+import { ReactNode } from "react";
 
 interface PropsCard {
-  imagemPrincipal: JSX.Element;
+  imagemPrincipal: ReactNode;
   data: string;
-  imagemStack: JSX.Element;
+  imagemStack: ReactNode;
   titulo: string;
   texto: string;
   link: string;
+  ctaText?: string;
 }
 
 function Card({
@@ -15,17 +16,31 @@ function Card({
   imagemStack,
   titulo,
   texto,
-  link
+  link,
+  ctaText = "Ver projeto no GitHub"
 }: PropsCard) {
   return (
-    <a className={module.card} href={link} target="_blank">
-      {imagemPrincipal}
-      <div className={module.dataEStack}>
-        <p className={module.data}>{data}</p>
+    <a
+      className="group flex h-full flex-col gap-5 rounded-2xl border border-white/10 bg-surface p-6 transition duration-300 hover:-translate-y-1.5 hover:border-mint/40 hover:shadow-glow"
+      href={link}
+      target="_blank"
+      rel="noreferrer"
+    >
+      <div className="overflow-hidden rounded-xl border border-white/10">
+        {imagemPrincipal}
+      </div>
+      <div className="flex items-center justify-between gap-4 text-sm text-muted">
+        <p>{data}</p>
         {imagemStack}
       </div>
-      <h3 className={module.subtituloCard}>{titulo}</h3>
-      <p className={module.texto}>{texto}</p>
+      <h3 className="font-title text-xl font-semibold text-text transition group-hover:text-mint">
+        {titulo}
+      </h3>
+      <p className="text-sm leading-7 text-muted">{texto}</p>
+      <p className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-accent transition group-hover:text-mint">
+        {ctaText}
+        <span aria-hidden="true">→</span>
+      </p>
     </a>
   );
 }
